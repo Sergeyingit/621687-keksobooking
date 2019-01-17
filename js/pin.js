@@ -23,7 +23,6 @@
   // отрисовывает метку
   var renderPins = function (allAds, qty) {
     removePins();
-
     var pinFragment = document.createDocumentFragment();
     for (var j = 0; j < qty; j++) {
       pinFragment.appendChild(getPinElement(allAds[j], window.card.render));
